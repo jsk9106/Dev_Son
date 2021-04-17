@@ -1,7 +1,7 @@
 import 'package:dev_son/components/title_and_subtitle.dart';
 import 'package:dev_son/constants.dart';
 import 'package:dev_son/controller/about_me_controller.dart';
-import 'package:dev_son/model/about_me.dart';
+import '../../model/about_me.dart';
 import 'package:dev_son/responsive.dart';
 import 'package:dev_son/screens/detail_contents/detail_contents.dart';
 import 'package:dev_son/screens/introduction_menu/introduction_menu.dart';
@@ -116,7 +116,6 @@ class _MyListState extends State<MyList> {
                         : index == AboutMeController.to.cardIndex.value
                             ? Colors.white70
                             : kTextColor,
-                    fontWeight: FontWeight.w200,
                     fontSize: 11,
                   ),
                   maxLines: 3,

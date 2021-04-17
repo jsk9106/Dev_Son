@@ -1,4 +1,4 @@
-import 'package:dev_son/model/about_me.dart';
+import '../model/about_me.dart';
 import 'package:get/get.dart';
 
 class AboutMeController extends GetxController{

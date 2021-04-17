@@ -1,4 +1,4 @@
-import 'package:dev_son/model/about_me.dart';
+import '../model/about_me.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';

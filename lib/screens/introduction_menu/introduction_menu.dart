@@ -2,6 +2,7 @@ import 'package:dev_son/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../constants.dart';
 
@@ -46,9 +47,9 @@ class IntroductionMenu extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              _buildChannelButton('Github', MdiIcons.github, () {}),
-              _buildChannelButton('Instargram', MdiIcons.instagram, () {}),
-              _buildChannelButton('E-mail', MdiIcons.gmail, () {})
+              _buildChannelButton('Github', MdiIcons.github, () => launch('https://github.com/jsk9106')),
+              _buildChannelButton('Instargram', MdiIcons.instagram, () => launch('https://www.instagram.com/soul_development')),
+              _buildChannelButton('E-mail', MdiIcons.gmail, () => Get.snackbar('Message', 'jsk9106@gmail.com')),
             ],
           ),
         ),
